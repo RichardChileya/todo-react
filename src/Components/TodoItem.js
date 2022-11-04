@@ -7,8 +7,9 @@ class TodoItem extends React.Component {
           type="checkbox"
           checked={this.props.todo.completed}
           onChange={() => this.props.handleChangeProps(this.props.todo.id)}
-        /> null
+          /> 
         {this.props.todo.title}
+        <button>delete</button>
       </li>
     );
   }
